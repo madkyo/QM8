@@ -39,3 +39,17 @@ def hello():
 ## Images
 
 ![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
+Please refer to the steps in the following link to configure your Zephyr environment:
+https://docs.zephyrproject.org/4.1.0/develop/getting_started/index.html => NOTE: version 4.1.0.
+(a) Install chocolatey.
+(b) Get Zephyr and install Python dependencies
+       - see also https://docs.nxp.com/bundle/GUIGUIDERUG_V1-6-0/page/topics/zephyr.html:
+          => Get Zephyr and install Python dependencies: step 4 (Zephyr’s scripts\requirements.txt … Install them with pip3).
+                 pip3 install -r %HOMEPATH%\zephyrproject\zephyr\scripts\requirements.txt
+(c) Install the Zephyr SDK
+(d) Build the Blinky Sample => if your environment is setup probably, you should be able to do this without error.
+ 
+west build -p always -b npcx4m8f_evb samples\basic\blinky
+
+
