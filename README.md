@@ -64,12 +64,19 @@ Please refer the commands below to upgrade EC.
 EC has 2nd BBK:
 
 ECFlashApp -V  [Check the current EC FW version]
+
 ECFlashApp -F -U <Main FW bin>   [Upgrade e-flash(ACPI I2C)]
+
 ECFlashApp -V  <bin> [Check the binary FW version]
+
 ECFlashApp -WUR <cmd> [Writes command over UART and reads the response]
+
 EC in Programming mode:
 
 ECFlashApp -PR <FW bin> [Upgrade e-flash(Hardware protocol)]
+
 ECFlashApp -OP ENBBK [Request entering into EC boot block]
+
 ECFlashApp -CR [Get Corruption Status] 
+
 ECFlashApp -OP DISBBK [Request exiting from EC boot block]  
