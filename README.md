@@ -80,3 +80,6 @@ ECFlashApp -OP ENBBK [Request entering into EC boot block]
 ECFlashApp -CR [Get Corruption Status] 
 
 ECFlashApp -OP DISBBK [Request exiting from EC boot block]  
+
+## EC version
+info.ymal
