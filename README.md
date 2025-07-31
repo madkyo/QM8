@@ -15,7 +15,9 @@ Flash instructions
 
 - ECFlashApp.efi -V <EC_FW>.bin Parses the EC firmware version from the binary's header and prints them.
 
-- ECFlashApp.efi -U <EC_FW>.bin Updates the EC's Active partition with the binary passed and shall reset the EC. (Note: This shall update the EC firmware only if there is a version mismatch between EC's Firmware version and Binary's Firmware Version).
+- ECFlashApp.efi -U <EC_FW>.bin
+- Updates the EC's Active partition with the binary passed and shall reset the EC.
+- (Note: This shall update the EC firmware only if there is a version mismatch between EC's Firmware version and Binary's Firmware Version).
 
  
 
@@ -26,8 +28,11 @@ ECFlashApp.efi -PR <EC_FW>.bin Erase and updates the entire EC internal flash - 
 FW (460kb) in Main FW update (Enter bbk)
 
 ECFlashApp.efi -OP ENBBK
+
 ECFlashApp.efi -ER IP1M P <EC_FW>.bin
+
 ECFlashApp.efi -ER IP2M P <EC_FW>.bin
+
 ECFlashApp.efi -OP DISBBK
 
 
