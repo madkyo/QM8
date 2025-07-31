@@ -23,6 +23,14 @@ FW (960kb) in HW Recovery Mode (UART Flash Programming Mode)
 
 ECFlashApp.efi -PR <EC_FW>.bin Erase and updates the entire EC internal flash - inclduing EC's Second stage bootloader, Active and Backup Partition
 
+FW (460kb) in Main FW update (Enter bbk)
+
+ECFlashApp.efi -OP ENBBK
+ECFlashApp.efi -ER IP1M P <EC_FW>.bin
+ECFlashApp.efi -ER IP2M P <EC_FW>.bin
+ECFlashApp.efi -OP DISBBK
+
+
 - Easy to write
 - Supports **bold** and *italic* text
 - Code blocks:
